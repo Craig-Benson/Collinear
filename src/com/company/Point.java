@@ -1,6 +1,6 @@
-/******************************************************************************
- *  Compilation:  javac Point.java
- *  Execution:    java Point
+package com.company; /******************************************************************************
+ *  Compilation:  javac com.company.Point.java
+ *  Execution:    java com.company.Point
  *  Dependencies: none
  *
  *  An immutable data type for points in the plane.
@@ -106,7 +106,7 @@ public class Point implements Comparable<Point> {
     }
 
     /**
-     * Unit tests the Point data type.
+     * Unit tests the com.company.Point data type.
      */
     public static void main(String[] args) {
         /* YOUR CODE HERE */
