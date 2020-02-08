@@ -1,12 +1,4 @@
-package com.company; /******************************************************************************
- *  Compilation:  javac com.company.Point.java
- *  Execution:    java com.company.Point
- *  Dependencies: none
- *
- *  An immutable data type for points in the plane.
- *  For use on Coursera, Algorithms Part I programming assignment.
- *
- ******************************************************************************/
+package com.company;
 
 import java.util.Comparator;
 import edu.princeton.cs.algs4.StdDraw;
@@ -61,7 +53,28 @@ public class Point implements Comparable<Point> {
     public double slopeTo(Point that) {
         /* YOUR CODE HERE */
 
-        return 0.0;
+
+        if(that.x ==this.x && that.y == this.y){
+            return Double.NEGATIVE_INFINITY;
+            }
+
+        double slopeX = that.x -this.x;
+        double slopeY = that.y - this.y;
+
+        //horizontal
+        if(slopeX == 0.0){
+            return +0.0f;
+        }
+
+        //vertical
+        if(slopeY == 0.0){
+            return Double.POSITIVE_INFINITY;
+        }
+
+        return slopeY / slopeX;
+
+
+
     }
 
     /**
@@ -78,7 +91,13 @@ public class Point implements Comparable<Point> {
      */
     public int compareTo(Point that) {
         /* YOUR CODE HERE */
-        return 0;
+
+        if(that.x ==this.x && that.y == this.y){
+            return 0;
+        }else if that.
+
+
+
     }
 
     /**
